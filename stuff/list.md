@@ -1,28 +1,41 @@
+# Categories
+- [Terminal Tools](##terminal-tools)
+- [Nix Tools](##nix-tools)
+- [Multimedia](##multimedia)
+- [Internet](##internet)
+
+## Terminal Tools
 - git
-- gimp
-- libreoffice-fresh
-- aseprite
-- inputs.zen-browser.packages."${system}".default
 - ranger
 - lazygit
 - p7zip
 - nchat
 - edk2
 - edk2-uefi-shell
-- mpv
-- nicotine-plus
-- legcord
-- easyeffects
-- bunnyfetch
 - gcc14
 - peaclock
 - musikcube
 - htop
 - guake
-- abaddon
 - discordo
 - git-credential-manager
 - neovim
+
+## Nix Tools
 - home-manager
 - devenv
+
+## Multimedia
+- gimp
+- libreoffice-fresh
+- aseprite
+- mpv
+- bunnyfetch
+- easyeffects
+- abaddon
+
+## Internet
+- zen browser (from flake)
+- nicotine-plus
+
 - xclip
