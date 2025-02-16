@@ -2,4 +2,8 @@ Version control of my personal NixOS config
 Using
 - Home manager
 - Flake
-![image](logo.png)
+- Mate DE
+
+[Program list](stuff/list.md)
+
+![image](stuff/logo.png)
