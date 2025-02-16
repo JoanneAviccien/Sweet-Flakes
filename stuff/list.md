@@ -37,5 +37,4 @@
 ## Internet
 - zen browser (from flake)
 - nicotine-plus
-
 - xclip
