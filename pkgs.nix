@@ -16,7 +16,6 @@ home.packages = with pkgs; [
 	edk2-uefi-shell
 	mpv
 	nicotine-plus
-	legcord
 	easyeffects
 	bunnyfetch
 	gcc14
@@ -27,6 +26,8 @@ home.packages = with pkgs; [
 	abaddon
 	discordo
 	git-credential-manager
+	dialog
+	ttyper
 ];	
 
 }
