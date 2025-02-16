@@ -1,8 +1,9 @@
 # Not So Sweet Flakes Cereal
 Version control of my personal NixOS config
 Using
-- Home manager
+- Home-manager
 - Flake
+- Devenv
 - Mate DE
 
 ## Version Numbering
@@ -15,5 +16,6 @@ Using
 
 ## Program list
 You can check out the progrma list [here](stuff/list.md)
+> Bonus! some shitty bash script that i wrote
 
 ![image](stuff/logo.png)
