@@ -6,11 +6,11 @@ Using
 - Mate DE
 
 ## Version Numbering
-| Info | Version | Revision | Device |
+| Info | Version | Generation | Device |
 |------|---------|----------|--------|
-| Example | V1 | R30 | HP14s |
+| Example | V1 | G30 | HP14s |
 
-> R30 meant its the 30th revision for the version that on the
+> G30 meant its the 30th Generation for the version that on the
 > version numbering. (V1)
 
 ## Program list
