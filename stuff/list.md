@@ -1,8 +1,8 @@
 # Categories
-- [Terminal Tools](##terminal-tools)
-- [Nix Tools](##nix-tools)
-- [Multimedia](##multimedia)
-- [Internet](##internet)
+- [Terminal Tools](#terminal-tools)
+- [Nix Tools](#nix-tools)
+- [Multimedia](#multimedia)
+- [Internet](#internet)
 
 ## Terminal Tools
 - git
