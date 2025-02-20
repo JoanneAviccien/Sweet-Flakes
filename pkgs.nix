@@ -28,6 +28,11 @@ home.packages = with pkgs; [
 	git-credential-manager
 	dialog
 	ttyper
+	vscode
+	rar
+	balatro
+	fastfetch
+	jdk23
 ];	
 
 }
