@@ -29,10 +29,11 @@
      specialArgs = { inherit inputs system; };
      modules = [
       ./configuration.nix
+      ./alias.nix
       home-manager.nixosModules.home-manager {
       home-manager.useGlobalPkgs = true;
       }
-     ];
+	];
     };
   };
   };

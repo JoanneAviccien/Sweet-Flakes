@@ -10,7 +10,10 @@
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.home-manager
     ];
-
+	
+	nixpkgs.config.permittedInsecurePackages = [
+                "freeimage-unstable-2021-11-01"
+        ];
   # Home Manager.
   home-manager = {
 	extraSpecialArgs = { inherit inputs; };

@@ -17,10 +17,8 @@ home.packages = with pkgs; [
 	mpv
 	nicotine-plus
 	easyeffects
-	bunnyfetch
 	gcc14
 	peaclock
-	musikcube
 	htop
 	guake
 	abaddon
@@ -33,6 +31,8 @@ home.packages = with pkgs; [
 	balatro
 	fastfetch
 	jdk23
+	jetbrains.idea-community-bin
+	kew
 ];	
 
 }

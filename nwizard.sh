@@ -1,6 +1,6 @@
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
-HEIGHT=10
+HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="NixOS Wizard"
