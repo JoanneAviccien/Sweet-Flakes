@@ -6,8 +6,8 @@ home.packages = with pkgs; [
 	nsxiv
 	lxappearance
 	brightnessctl
-	pavucontrol
 	polkit
+	polkit_gnome
 ];
 
 }

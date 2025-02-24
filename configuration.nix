@@ -80,10 +80,26 @@
   services.xserver.enable = true;
 
   # Enable the MATE Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = false;
   services.xserver.windowManager.fvwm3.enable = true;
   services.displayManager.ly.enable = true;
-  services.xserver.desktopManager.mate.enable = false;
+  security.polkit.enable = true;
+
+  systemd = {
+  user.services.polkit-gnome-authentication-agent-1 = {
+    description = "polkit-gnome-authentication-agent-1";
+    wantedBy = [ "graphical-session.target" ];
+    wants = [ "graphical-session.target" ];
+    after = [ "graphical-session.target" ];
+    serviceConfig = {
+        Type = "simple";
+        ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+        Restart = "on-failure";
+        RestartSec = 1;
+        TimeoutStopSec = 10;
+		      };
+  		};
+	};
+
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -140,6 +156,8 @@
 	home-manager
 	devenv
 	xclip
+	polkit
+	polkit_gnome
   #  vim
   #  wget
   ];

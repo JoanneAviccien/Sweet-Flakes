@@ -8,13 +8,11 @@
 
   home.stateVersion = "24.11";
 
-  programs.git = {
-	enable = true;
-	extraConfig = {
-		credential = {
-			credentialStore = "secretservice";
-		};
-	};
+   programs.git = {
+    extraConfig.credential.helper = "manager";
+    extraConfig.credential."https://github.com".username = "JoanneAviccien";
+    extraConfig.credential.credentialStore = "cache";
+    enable = true;
   };
       # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
 

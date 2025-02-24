@@ -36,6 +36,8 @@ home.packages = with pkgs; [
 	riff
 	fvwm3
 	ly
+	pulsemixer
+	gparted
 ];	
 
 }
