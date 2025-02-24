@@ -3,8 +3,11 @@
 
 home.packages = with pkgs; [
 	pcmanfm
-	nsixv
+	nsxiv
 	lxappearance
+	brightnessctl
+	pavucontrol
+	polkit
 ];
 
 }
