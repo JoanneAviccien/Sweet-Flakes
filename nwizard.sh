@@ -9,7 +9,8 @@ MENU="Choose one of the following options:"
 OPTIONS=(1 "Full Rebuild"
 	 2 "Switch"
 	 3 "Add nixpkgs"
- 	 4 "Cleaner")
+ 	 4 "Cleaner"
+	 5 "List gen")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -36,4 +37,7 @@ case $CHOICE in
 	4)
 	    nix-collect-garbage --delete-old
 	    ;;
+	5)
+		nix-env --list-generations --profile /nix/var/nix/profiles/system
+		;;
 esac

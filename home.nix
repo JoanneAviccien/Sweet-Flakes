@@ -4,7 +4,7 @@
   home.username = "herrscherin";
   home.homeDirectory = "/home/herrscherin";
 
-  imports = [ ./pkgs.nix ];
+  imports = [ ./pkgs.nix ./forwm.nix ];
 
   home.stateVersion = "24.11";
 

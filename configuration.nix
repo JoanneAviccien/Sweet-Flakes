@@ -80,8 +80,10 @@
   services.xserver.enable = true;
 
   # Enable the MATE Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.mate.enable = true;
+  services.xserver.displayManager.lightdm.enable = false;
+  services.xserver.windowManager.fvwm3.enable = true;
+  services.displayManager.ly.enable = true;
+  services.xserver.desktopManager.mate.enable = false;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -122,7 +124,7 @@
   };
 
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.enable = false;
   services.xserver.displayManager.autoLogin.user = "herrscherin";
 
   # Install firefox.

@@ -33,6 +33,9 @@ home.packages = with pkgs; [
 	jdk23
 	jetbrains.idea-community-bin
 	kew
+	riff
+	fvwm3
+	ly
 ];	
 
 }
