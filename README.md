@@ -4,7 +4,7 @@ Using
 - Home-manager
 - Flake
 - Devenv
-- [FVWM](stuff/list.md)
+- [FVWM](stuff/announce.md)
 
 ## Version Numbering
 | Info | Version | Generation | Device |
