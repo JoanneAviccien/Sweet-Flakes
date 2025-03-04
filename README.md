@@ -15,7 +15,7 @@ Using
 > version numbering. (V1)
 
 ## Program list
-You can check out the progrma list [here](stuff/list.md)
+You can check out the program list [here](stuff/list.md)
 > Bonus! some shitty bash script that i wrote
 
 ![image](stuff/logo.png)
