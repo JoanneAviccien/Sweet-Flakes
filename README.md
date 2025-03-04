@@ -4,7 +4,7 @@ Using
 - Home-manager
 - Flake
 - Devenv
-- Mate DE
+- [FVWM](stuff/list.md)
 
 ## Version Numbering
 | Info | Version | Generation | Device |
