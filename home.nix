@@ -14,6 +14,17 @@
     extraConfig.credential.credentialStore = "cache";
     enable = true;
   };
+
+  xdg.mime.enable = true;
+  xdg.mimeApps.associations.added = {
+	"image/png" = "nsxiv.desktop";
+	"image/jpg" = "nsxiv.desktop";
+	"image/gif" = "nsxiv.desktop";
+	"image/jpeg" = "nsxiv.desktop";
+	"application/pdf" = "org.pwmt.zathura-pdf-mupdf";
+	"application/epub+zip" = "org.pwmt.zathura-pdf-mupdf.desktop";
+	};
+
       # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
 
     # # You can also create simple shell scripts directly inside your
@@ -38,26 +49,9 @@
     # '';
   };
 
-  # Home Manager can also manage your environment variables through
-  # 'home.sessionVariables'. These will be explicitly sourced when using a
-  # shell provided by Home Manager. If you don't want to manage your shell
-  # through Home Manager then you have to manually source 'hm-session-vars.sh'
-  # located at either
-  #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  ~/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  /etc/profiles/per-user/herrscherin/etc/profile.d/hm-session-vars.sh
-  #
   home.sessionVariables = {
     EDITOR = "nvim";
   };
 
-  # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }

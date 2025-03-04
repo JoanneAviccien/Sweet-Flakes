@@ -22,6 +22,16 @@
 	};
   };
 
+  services.flatpak.enable = true;
+  xdg.portal = {
+  enable = true;
+  extraPortals = with pkgs; [
+    xdg-desktop-portal-gtk
+	  ];
+ 	}; 
+  # Fonts
+	fonts.packages = with pkgs; [ nerd-fonts.fira-code nerd-fonts.droid-sans-mono ];
+
   # Flakes.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.extraOptions = ''
@@ -35,8 +45,10 @@
     defaultEditor = true;
   };
   programs.nano.enable = false;
+  programs.slock.enable = true;
 
-
+  services.udisks2.enable = true;
+  services.udisks2.mountOnMedia = true;
 
   # Bootloader.
   boot.loader = {
@@ -152,9 +164,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+	xdg-desktop-portal-gtk
+	devenv
 	neovim
 	home-manager
-	devenv
 	xclip
 	polkit
 	polkit_gnome

@@ -9,8 +9,9 @@ MENU="Choose one of the following options:"
 OPTIONS=(1 "Full Rebuild"
 	 2 "Switch"
 	 3 "Add nixpkgs"
- 	 4 "Cleaner"
-	 5 "List gen")
+	 4 "Add wmpkgs"
+ 	 5 "Cleaner"
+	 6 "List gen")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -35,9 +36,12 @@ case $CHOICE in
 	    nixos-rebuild switch --flake /home/herrscherin/.config/home-manager/ 
             ;;
 	4)
-	    nix-collect-garbage --delete-old
+	    nvim /home/herrscherin/.config/home-manager/forwm.nix
 	    ;;
 	5)
+	    nix-collect-garbage --delete-old
+	    ;;
+	6)
 		nix-env --list-generations --profile /nix/var/nix/profiles/system
 		;;
 esac
